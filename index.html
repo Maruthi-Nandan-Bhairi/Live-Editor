@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIVE CODE EDITOR...</title>
+  <style>
+    body
+    {
+      background-image: url(bg2.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 12rem;
+      font-family: "Garamond", serif;
+      color: transparent;
+      -webkit-text-stroke: 10px magenta;
+      position: relative;
+    }
+
+    h1::before {
+      content: "WELCOME";
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      overflow: hidden;
+      color: magenta;
+      border-right: 8px solid maroon;
+      transition: 1s ease-in-out;
+    }
+
+    h1:hover::before {
+      width: 100%;
+      filter: drop-shadow(1px 1px 35px magenta);
+    }
+
+    .btn-container {
+      margin-top: 550px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      background-color: white;
+      padding: 20px 50px;
+      font-size: 30px;
+      font-weight: bold;
+      border: none;
+      border-radius: 15%;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: magenta;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="btn-container">
+    <a class="btn" href="code.html">EDITOR</a>
+    <a class="btn" href="code2.html">WORKSPACE</a>
+  </div>
+</body>
+</html>
